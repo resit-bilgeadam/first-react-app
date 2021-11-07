@@ -1,5 +1,7 @@
-body {
+*, *::before, *::after {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,3 +13,64 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+hr {
+  margin: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.todos-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin: 40px 0;
+}
+
+.todo-card {
+  border: 1px solid slategray;
+  box-shadow: 0 0 4px 0 #eaeaea;
+  padding: 20px;
+  border-radius: 4px;
+}
+.todo-title {
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: slateblue;
+  color: snow;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 15px 25px;
+  transition: 200ms ease-in-out;
+}
+.btn:hover {
+  background-color: royalblue;
+}
+
+.todo-form-wrapper {
+  width: 400px;
+  margin: auto; 
+}
+
+.label, .input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.input {
+  border-radius: 4px;
+  padding: 15px 20px;
+  font-size: 20px;
+}
+
